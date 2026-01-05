@@ -2,13 +2,15 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 10000;
 
-app.use(express.static("public")); // index.htmlやJS/CSSが入ったフォルダ
+// 静的ファイルを配信
+app.use(express.static("public"));
 
-// テスト用 API データ
+// テスト用 API
 app.get("/api/data", (req, res) => {
   res.json({
     "2026-01-05": "今日はテストデータです",
-    "2026-01-06": "明日のテストデータ"
+    "2026-01-06": "明日のテストデータ",
+    "2026-01-07": "さらに翌日もテストデータ"
   });
 });
 
