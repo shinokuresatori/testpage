@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ARG リンクページ</title>
+<style>
+body {
+  background:#111;
+  color:#fff;
+  font-family:sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  flex-direction:column;
+}
+
+button {
+  padding:12px 24px;
+  font-size:1.2em;
+  cursor:pointer;
+  border:none;
+  border-radius:6px;
+  background:#6fa8ff;
+  color:#000;
+  transition:0.2s;
+}
+
+button:hover {
+  background:#88bfff;
+}
+</style>
+</head>
+<body>
+
+<h1>ARG-δ Viewerへ</h1>
+<button onclick="goToViewer()">詳細を見る</button>
+
+<script>
+function goToViewer() {
+  // ViewerのページURLにARGのIDをパラメータで渡す
+  window.location.href = "viewer.html?arg=onsale_ARG-δ";
+}
+</script>
+
+</body>
+</html>
